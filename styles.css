@@ -1,0 +1,330 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-glaho/css/bpg-glaho.min.css");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    background-color: #eeeef0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+.logo img{
+    max-width: 100%;
+    width: 115px;
+    height: auto;
+
+}
+.navmenu{
+    display: flex;
+
+}
+.navmenu li{
+    position: relative;
+}
+.navmenu a{
+    color: #212832;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 15px 25px;
+    transition: all .42s;
+}
+.navmenu a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #212832;
+    bottom: -2px;
+    left: 0;
+    transition: all .42s;
+}
+.navmenu a:hover::after{
+    width: 100%;
+
+}
+.btn-icon{
+    display: flex;
+    align-items: center;
+
+}
+#menu-icon{
+    font-size: 35px;
+    color: #212832;
+    z-index: 10001;
+    cursor:  pointer;
+    display: none;
+}
+section{
+    padding: 120px 12%;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url('http://wallpapercave.com/wp/IpGSDFe.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.home-img img{
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+}
+.home-text h4{
+    color: #a0a4a5;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+
+}
+.home-text h1{
+    color: #fafafc;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0.04em;
+    margin-bottom: 18px;
+
+}
+.home-text p{
+    color: #ccccd3;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.button a{
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    background: #012c2e;
+    border-radius: 10px;
+    margin-right: 40px;
+    transition: all .42s;
+}
+.button a:hover{
+    transform: translateY(-5px);
+}
+
+.boutus p{
+    color: #000000;
+}
+.about{
+    background-image: url('https://wallpapercave.com/uwp/uwp1343161.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.on{
+    text-align: center;
+}
+#product1{
+    text-align: center;
+    
+    
+
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+
+
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#product1 .pro img{
+    border-radius: 25px;
+}
+#product1 .star{
+    transition: 0.3s;
+}
+#product1 .star:hover{
+    color: gold;
+}
+
+#product1 .hh{
+    color: #11184d;
+    transition: 0.3s;
+}
+#product1 .hh:hover{
+    color: gold;
+}
+#footer{
+    background-color: #ebe7e7;
+}
+#footer .icons a{
+    color: #000000;
+    transition: 0.4s;
+}
+#footer .icons a:hover{
+    color: purple;
+}
+
+
+
+/* Responsive design css */
+
+@media(max-width:1265px){
+    header{
+        padding: 10px 4%;
+        transition: .3s;
+
+    }
+    section{
+        padding: 60px 4%;
+        transition: .3s;
+
+
+    }
+}
+
+@media(max-width:1050px){
+    .home{
+        grid-template-columns: 1fr;
+        height: 100%;
+        transition: .3s;
+
+    }
+    .home-text{
+        padding-top: 100px;
+        text-align: center;
+        transition: .3s;
+
+        
+    }
+    .home-img img{
+        padding-top: 50px;
+        transition: .3s;
+
+    }
+}
+@media(max-width:1180px){
+    .home-text h1{
+        font-size: 56px;
+        transition: .3s;
+
+    }
+    .home-text h4{
+        font-size: 18px;
+        transition: .3s;
+
+    }
+    .home-text p{
+        font-size: 15px;
+        transition: .3s;
+    }
+}
+@media(max-width:415px){
+    .home-text h1{
+        font-size: 40px;
+        line-height: 50px;
+        transition: .3s;
+
+
+    }
+    .home-text p{
+        font-size: 12px;
+        transition: .3s;
+    }
+}
+@media(max-width:970px){
+    #menu-icon{
+        display: block;
+
+    }
+    .navmenu{
+        position: absolute;
+        top: -600px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: #fff1da;
+        text-align: left;
+        transition: all .42s;
+
+    }
+    .navmenu a{
+        display: block;
+        padding: 16px;
+        margin: 8px;
+        border-left: 2px solid #212832;
+
+    }
+    .navmenu.open{
+        top: 100%;
+    }
+    
+}
+#rewiews{
+    text-align: center;
+    
+    
+
+}
+#rewiews .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+
+
+}
+#rewiews .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+@media(max-width:320px){
+    
+}
